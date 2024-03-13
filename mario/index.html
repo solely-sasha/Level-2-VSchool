@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mario Pest Control</title>
+</head>
+<body>
+     <header>
+      <h1>Mario Pest Control</h1>
+    </header>
+    <main class="container">
+      <div class="images">
+        <div><img src="images/Hot_Goomba.webp" class="baddie" /></div>
+        <div><img src="images/Bobomb_Icon.webp" class="baddie" /></div>
+        <div><img src="images/cheepcheep.png" class="baddie" /></div>
+      </div>
+      <div>
+        <h2>Name</h2>
+        <p class="goombas">Goombas</p>
+        <p class="bob-ombs ">Bob-ombs</p>
+        <p class="cheep-cheep ">Cheep-cheeps</p>
+      </div>
+      <div>
+        <form name="baddies">
+          <h2># Caught</h2>
+          <input type="number" name="goombas" value="" class="goombas " onChange="baddiesTotal()"/>
+          <input type="number" name="bombs" value="" class="bob-ombs " onChange = "baddiesTotal()"/>
+          <input type="number" name="cheeps" value="" class="cheep-cheep" onChange ="baddiesTotal()"/>
+    
+      </div>
+
+      <div>
+        <h2>Price</h2>
+
+        <p class="goombas coin">
+          X 5 <img src="images/coin.png" class="coin" />
+        </p>
+        <p class="bob-ombs coin">
+          X 7 <img src="images/coin.png" class="coin" />
+        </p>
+        <p class="cheep-cheep coin">
+          X 11 <img src="images/coin.png" class="coin" />
+        </p>
+      </div>
+
+      <div class="total-baddies">
+       
+        <h2>Total</h2>
+    
+        <input  id="goombasInput" type="text" name="totalGoombas" value="" class="goombas" />
+        
+        <input  id="bombsInput" type="text" name="totalbombs" value="" class="bob-ombs" />
+        <input id="cheepsInput" type="text" name="totalcheeps" value="" class="cheep-cheep" />
+        <button id="total">Final</button>
+        
+        <input id="finalTotal"type="text" name="finalTotal" value="" class="finalTotal">
+    
+        
+        </form>
+      </div>
+    </main>
+
+    
+
+    <footer>
+      <p><a href="mailto:mario@email.com">MarioPestControl@mario.com</a></p>
+      <p>MarioPestControl.com</p>
+      <p>123 Mario Lane, Mario World</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

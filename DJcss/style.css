@@ -1,0 +1,70 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100vh;
+  grid-gap: 5px;
+  align-items: center;
+  justify-items: center;
+}
+.container > div {
+  width: 150px;
+
+  height: 150px;
+  text-align: center;
+}
+
+.red {
+  background-color: red;
+  transition: background-color 0.5s linear, border 1s ease-in-out,
+    transform 0.5s;
+}
+.red:hover {
+  background-color: rgb(229, 19, 212);
+  border: 3px solid rgb(0, 202, 97);
+  transform: scale(1.5, 1.5);
+}
+
+.orange {
+  background-color: orange;
+  transition: transform 2s, border 1s linear, background-color 1s steps(4);
+}
+.orange:hover {
+  transform: scale(-1, -1);
+  background-color: aqua;
+  border: 2px solid rgb(229, 19, 212);
+}
+.yellow {
+  background-color: yellow;
+  transition: backround-color 2s ease, border ease-in 1ms;
+}
+.yellow:hover {
+  background-color: rgb(135, 70, 213);
+  border: 3px solid rgb(217, 158, 10);
+}
+.green {
+  background-color: green;
+  transition: opacity linear 1s, background-color 0.5s ease-in-out;
+}
+.green:hover {
+  opacity: 0.2;
+  background-color: rgb(77, 128, 216);
+}
+
+.blue {
+  background-color: blue;
+  transition: background-color 1s linear, border 0.5s linear;
+}
+.blue:hover {
+  border: 3px dotted blue;
+  background-color: white;
+}
+
+.purple {
+  background-color: purple;
+  transition: transform 1s, background-color 0.5s steps(3);
+}
+
+.purple:hover {
+  transform: skewY(-10deg) translateX(20px);
+  background-color: rgb(222, 135, 36);
+}

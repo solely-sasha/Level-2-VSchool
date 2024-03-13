@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Form</title>
+  </head>
+  <body>
+    <form name="travel-form" class="travel-form">
+      <section class="name">
+        <input type="text" name="firstName" placeholder="first name" />
+        <input type="text" name="lastName" placeholder="last name" />
+      </section>
+      
+      <section class="age">
+
+        <input type="number" name="age" placeholder="age" value="age" id="age"/>
+      </section>
+<section class="gender">
+  <label for="male">Male</label>
+  <input type="radio" name="gender" value="male" id="male" />
+  <label for="female">Female</label>
+  <input type="radio" name="gender" value="female" id="female" />
+  </section>
+  <section class="location">
+  <select name="location">
+    <option value="select">select a location</option>
+    <option value="Cairo">Cairo</option>
+    <option value="Hollywood">Hollywood</option>
+    <option value="Chicago">Chicago</option>
+  </select>
+  </section>
+      <section class="diet">
+        <label for="diet">Dietary restrictions:</label>
+        <br/>
+        <label for="vegetarian">vegetarian</label>
+        <input
+          type="checkbox"
+          id="vegetarian"
+          name="diet"
+          value="vegetarian"
+        />
+        
+        <label for="kosher">kosher</label>
+        <input
+        type="checkbox"
+        id="kosher"
+        name="diet"
+        value="kosher"
+        />
+        <label for="lactose">lactose free</label>
+        <input
+          type="checkbox"
+          id="lactose free"
+          name="diet"
+          value="lactose free"
+        />
+      </section>
+        
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

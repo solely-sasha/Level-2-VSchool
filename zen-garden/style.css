@@ -1,0 +1,340 @@
+/* color: #325050; 
+  background: #fff; */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Julius Sans One ", sans-serif;
+  color: #325050;
+  background: #fff;
+  line-height: 1.5;
+}
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  width: 100%;
+  /* give the container display grid */
+  display: grid;
+  /* with six rows, 50px high */
+  grid-template-columns: 70% 30%;
+  grid-template-rows: repeat(6, minmax(100px, min-content));
+  grid-template-areas:
+    "header-left header-right"
+    "header-left header-right"
+    "header-left header-right"
+    "main        side"
+    "main        side"
+    "main        side"
+    "content     links"
+    "content     links"
+    "requirements ."
+    "footer      footer"
+    "footer      footer"
+    "icons       icons"
+    "icons       icons";
+
+  /* default all cells/children on the left be 2/3 the screen width, and all on the left 1/3 */
+}
+
+.container > div > p,
+h3 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 20%;
+  margin-top: 5%;
+  filter: invert(15%);
+  position: absolute;
+}
+.header {
+  position: relative;
+  background: urL("images/huntington.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+h3.subtitle {
+  font-style: italic;
+  /* padding-right: 50px;  */
+  color: rgba(255, 255, 255, 0.791);
+}
+
+h3.section-title {
+  margin-left: 20px;
+  font-size: 1.9rem;
+  font-family: "LibreBaskerville", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.css-span {
+  border-bottom: 3px dotted #e7ecf0;
+}
+.paragraph-1 {
+  padding: 10px;
+}
+.header.left {
+  grid-area: header-left;
+}
+.header.left h1 {
+  margin-top: 70px;
+}
+.header.left h1,
+h3 {
+  margin-left: 40%;
+  font-weight: 400;
+}
+
+.header.right {
+  grid-area: header-right;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  margin-left: 2px;
+  width: 40px;
+}
+
+.header.right h4 {
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.123);
+  padding: 10px;
+}
+
+.header.right h4:hover {
+  background-color: rgba(255, 255, 255, 0.476);
+  cursor: pointer;
+}
+.container > div {
+  padding: 3rem;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.main {
+  grid-area: main;
+  margin-top: 2rem;
+}
+.css-span {
+  border-bottom: 2px dotted #325050;
+}
+p {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+.content {
+  grid-area: content;
+  background-image: url("images/bamboo.jpg");
+
+  background-color: rgba(138, 188, 159, 0.5);
+}
+.content a:hover {
+  text-decoration: underline;
+}
+.content.links {
+  text-transform: uppercase;
+  text-align: left;
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
+.content.links ul > div {
+  margin: 4rem;
+}
+.content.links .first-link {
+  border-top: 2px solid rgba(116, 116, 116, 0.24);
+  padding-top: 3rem;
+}
+.content.links ul li:last-child {
+  border-bottom: 2px solid rgba(116, 116, 116, 0.24);
+  padding-bottom: 3rem;
+}
+.content.links a {
+  text-decoration: none;
+  color: #607476;
+}
+.content.links a:hover {
+  color: #49968e;
+  cursor: pointer;
+}
+
+.participation-link {
+  text-decoration: none;
+  color: #0d8ba1;
+}
+.authors {
+  grid-area: side;
+  background-color: #edf4f0;
+}
+.authors li:first-of-type {
+  text-transform: uppercase;
+}
+ul {
+  list-style: none;
+  color: #607476;
+}
+.file-link {
+  color: #809b7e;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.file-link:hover {
+  background-color: #226c6c;
+  padding: 5px;
+  cursor: pointer;
+}
+.authors li:nth-child(n) a {
+  color: #607476;
+}
+.authors ul li {
+  color: #809b7e;
+}
+.authors li:nth-child(2n) a {
+  color: #616857;
+  font-size: 1.4rem;
+}
+.authors a {
+  text-decoration: none;
+}
+.authors ul a:hover {
+  color: #49968e;
+  cursor: pointer;
+}
+.authors ul > div {
+  margin: 4rem;
+}
+.links {
+  grid-area: links;
+  mask-image: url("images/contours.jpg");
+  background-color: rgba(138, 188, 159, 0.7);
+}
+
+.requirements {
+  grid-area: requirements;
+}
+.requirements a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cc-site-link {
+  text-decoration: none;
+  color: #325050;
+}
+.cc-site-link:hover {
+  color: #0d8ba1;
+  text-decoration: underline;
+}
+
+.footer {
+  /* make these span the width of the page */
+  background-color: #3e5d67;
+  grid-area: footer;
+  position: relative;
+  background: url("images/koi.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.footer-text {
+  font-size: 3rem;
+  margin: 10rem;
+  line-height: 1.5;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.476);
+  font-family: "Libre Baskerville", serif;
+  font-style: italic;
+}
+.footer-text a {
+  text-decoration: none;
+  color: white;
+  font-style: normal;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+.icon-container {
+  background-color: #325050;
+  grid-area: icons;
+}
+.icons {
+  /* grid-area: icons; */
+
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  grid-auto-flow: column;
+}
+.icons > div {
+  color: white;
+  width: 60px;
+  height: 60px;
+  background-color: #325050;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.icons > div:hover {
+  background-color: rgba(255, 255, 255, 0.534);
+  cursor: pointer;
+}
+.icons h2 {
+  padding-top: 10px;
+  font-family: "Julius Sans One", sans-serif;
+}
+.icons h2:hover {
+  color: #325050;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-areas:
+      "header-left header-left"
+      "header-right header-right"
+      "main        main"
+      "main        main"
+      "main        main"
+      "content     content"
+      "content     content"
+      "requirements requirements"
+      "footer      footer"
+      "footer      footer"
+      "icons       icons"
+      "icons       icons"
+      "side  side"
+      "links  links";
+  }
+  html {
+    font-size: 50%;
+  }
+  .header.right {
+    align-content: center;
+    justify-content: center;
+  }
+  .footer {
+    height: 200px;
+  }
+  .footer-text {
+    font-size: 1.8rem;
+    width: 80%;
+  }
+  .icons {
+    width: 100%;
+    display: grid;
+    justify-items: space-between;
+    text-align: center;
+  }
+}

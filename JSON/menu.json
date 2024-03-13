@@ -1,0 +1,94 @@
+{
+    "Appetizers": [
+        {
+            "name": "Cucumber Compilation",
+            "ingredients": [
+                "cucumbers",
+                "cream cheese",
+                "deli meat"
+            ],
+            "description": "create the perfect taste that fits into your diet program with this delightfully delicious combination of your choice of freshly sliced deli meat sandwiched between cucumbers with a spread of garlic and herb cream cheese"
+        },
+        {
+            "name": "Array of Fries",
+            "ingredients": [
+                "seasoned fries",
+                "onion rings",
+                "jalapeno poppers"
+            ],
+            "description": "indulge in fried favorites with a shareable platter of fries with a blend of house seasoning, crispy onion rings, and bite size onion rings"
+        }
+    ],
+    "Cold Sandwiches": [
+        {
+            "name": "Deli Declaration",
+            "ingredients": [
+                "turkey",
+                "avocado",
+                "cheese",
+                "spinach torillas",
+                "garbanzo beans",
+                "ground cumin"
+            ],
+            "description": "This wrap really makes a statement. Fresh sliced turkey wrapped with spinach torillas with homemade hummus and tangy avacodo dressing and a choice of cheese "
+        },
+        {
+            "name": "CSS, Classic Style Sandwich",
+            "ingredients": [
+                "meat",
+                "cheese",
+                "toppings", 
+                "bread" 
+            ],
+          
+            "description": "Create your favorite flavor with all the classic choices of homemade bread, meat of choice, and toppings of choice"
+        
+        }
+
+    ],
+    "Desserts": [
+        {
+            "name": "Fullstack Fruit ",
+            "ingredients": [
+                "vanilla Yogurt",
+                "peaches",
+                "chocolate slivers",
+                "strawberries",
+                "blueberries"
+            ],
+            "description": "the sweet indulgence of vanilla yogurt layered with fresh fruit and topped with dark chocolate slivers"
+        },
+        {
+            "name": "MVP: Most Viable Pie",
+            "ingredients": [
+                "chocolate pudding",
+                "oreos",
+                "whipped topping",
+                "pie crust"
+            ],
+            "description": "The pie with the most crucial ingredients to satisfy a sweet tooth"
+        }
+    ],
+    "Drinks": [
+        {
+            "name": "Vanilla Java",
+            "ingredients": [
+                "coffee",
+                "vanilla",
+                "cinammon"
+            ],
+            "description": "Robust flavorful coffee in a class of it's own with a sweet blend of vanilla topped with whipped cream and sprinkles of cinnamon"
+        },
+        {
+            "name": ".pop()",
+            "flavors": [
+                "root beer",
+                "vanilla coke",
+                "cream soda",
+                "sprite"
+
+            ]
+        
+        }
+    ]
+}
